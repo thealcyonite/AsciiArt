@@ -4,7 +4,7 @@ Author: Linyun Liu
 date: 2025-06-10
 Hashtags: Python, Pillow, Ascii, Art
 ---
-![[thumbnail.jpg]]
+![[resources/thumbnail.jpg]]
 ## Introduction
 All the images we see on a screen are made up of tiny units called pixels. These pixels are usually so small that they're invisible to the human eye. But what if we could read each individual pixel and translate it into an ASCII character? By doing this, we can recreate an image in a unique, text-based style—where each character acts as a stand-in for a pixel. Of course, everything on screen is still rendered with RGB pixels in the end, but this transformation gives the image a distinctive and stylish look.
 
@@ -36,7 +36,7 @@ Combine these two library we can make our idea come true, Let's get started!
 ## Basic Idea
 We use the Pillow library to read an image and extract the RGB values of each pixel. With this information, we can print ASCII characters in the corresponding colours to recreate the image. However, images typically contain hundreds or even thousands of pixels, making it impractical to render each one as a separate character. The terminal window, or even the entire screen, wouldn’t be large enough to display them all, and doing so would significantly impact performance. To address this, we **divide the image into a grid** (as shown below) and **use an ASCII character to represent each cell**, effectively compressing the visual data while preserving the overall structure.
 
-![[tulip-grid.jpg]]
+![[resources/tulip-grid.jpg]]
 
 As shown in the example image above (with enlarged grid squares for visual clarity), the main idea is to **calculate the average color of each square** and use that color for the ASCII character representing it. The concept is simple, but it does involve some basic yet slightly tricky math. As you might imagine, the final result will look “pixelated” — but that’s exactly what gives it its unique, stylish charm.
 
@@ -130,7 +130,7 @@ converter = AsciiArtConverter(image_path, square_size, "@@")
 converter.convert_to_ascii()
 ```
 
-![[tulip-converted.jpeg]]
+![[resources/tulip-converted.jpeg]]
 
 ## Notes
 - **Choose an appropriate `square_size`:** Since image sizes vary widely—some images have only a few hundred pixels per row, while others have thousands—you should adjust the `square_size` accordingly to balance detail and performance.
