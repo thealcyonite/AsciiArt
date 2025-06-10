@@ -139,4 +139,4 @@ converter.convert_to_ascii()
 - **Handling character compatibility with Rich:** If certain characters don’t render well with the `Rich` library, try using different characters until you find one that display properly.
 
 ## Final Words
-Welcome to this very first official blog post of Alcyonite! We hope you find it clear and easy to follow. If it sparks your creativity, feel free to share it with your friends. And don’t hesitate to send us your feedback — it helps us improve and create even better content for you in the future!
+We hope you find it clear and easy to follow. If it sparks your creativity, feel free to share it with your friends. And don’t hesitate to send us your feedback — it helps us improve and create even better content for you in the future!
