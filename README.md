@@ -1,5 +1,5 @@
 ---
-Title: Covert an Image into Colourful Ascii Art
+Title: Convert an Image into Colourful Ascii Art
 Description: How to use python to convert and print an image inside your terminal with colourful ascii characters.
 Author: Linyun Liu
 Hashtags: Python, Pillow, Ascii, Art
