@@ -137,8 +137,6 @@ converter.convert_to_ascii()
 - **Choose an appropriate `square_size`:** Since image sizes vary widely—some images have only a few hundred pixels per row, while others have thousands—you should adjust the `square_size` accordingly to balance detail and performance.
 - **Why use double characters like "@@"?:** Terminals typically print characters with some vertical spacing. If you use a single character, the output can appear vertically stretched. Doubling the character width helps maintain the correct aspect ratio. Keep in mind this behaviour may vary depending on your terminal.
 - **Handling character compatibility with Rich:** If certain characters don’t render well with the `Rich` library, try using different characters until you find one that display properly.
-## GitHub
-You are free to use this code however you want, you can clone this project from our repository here: 
 
 ## Final Words
 Welcome to this very first official blog post of Alcyonite! We hope you find it clear and easy to follow. If it sparks your creativity, feel free to share it with your friends. And don’t hesitate to send us your feedback — it helps us improve and create even better content for you in the future!
